@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".ui.profile.ProfileFragment">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profile_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="32dp"
+        app:civ_border_color="@color/gradientDark"
+        app:civ_border_width="2dp"
+        app:srcCompat="@drawable/empty_profile_picture" />
+
+    <TextView
+        android:id="@+id/tv_profile_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Eduardo"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Balder"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_profile_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Customer"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="64dp"
+            android:background="@color/gradientDark"
+            app:srcCompat="@android:drawable/sym_action_email" />
+
+        <TextView
+            android:id="@+id/tv_profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="80dp"
+            android:text="john@doe.com"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/gradientDark"
+            app:srcCompat="@android:drawable/ic_menu_call" />
+
+        <TextView
+            android:id="@+id/tv_profile_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:text="809-581-5555"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/gradientDark"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_marginTop="64dp" />
+</LinearLayout>
